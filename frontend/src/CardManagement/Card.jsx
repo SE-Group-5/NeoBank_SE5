@@ -11,6 +11,8 @@ const Card = (props) => {
             <div className="CardValidity">Valid upto: {props.cardExpiry}</div>
             <div className="CardCvv">CVV: {props.cardCvv}</div>
             <div className="CardBrand">NeoBank {props.cardBrand}</div>
+            <div className="CopyNumber"></div>
+            <div className="CopyNumber1"></div>
         </div>
 
 
