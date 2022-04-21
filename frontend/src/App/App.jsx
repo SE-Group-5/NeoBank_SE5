@@ -13,7 +13,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Navigation from "../components/Navigation/Navigation";
 import Account from "../components/Account/Account";
 import Settings from "../components/Settings/Settings";
-
+import CardHome from "../CardManagement/CardHome";
 import Converter from "../containers/Converter/Converter";
 import Transactions from "../containers/Transactions/Transactions";
 import Messages from "../containers/Messages/Messages";
@@ -66,6 +66,7 @@ class App extends Component {
               <PrivateRoute path="/converter" component={Converter} />
               <PrivateRoute path="/settings" component={Settings} />
               <PrivateRoute path="/messages" component={Messages} />
+              <PrivateRoute path="/card" component={CardHome} />
               <PrivateRoute component={PageNotFound} />
             </Switch>
           </Layout>

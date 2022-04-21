@@ -1,6 +1,8 @@
 
 .Title {
-    position: absolute;
+    position: fixed;
+    top: 200px;
+    left: 500px;
 width: 185px;
 height: 71px;
 
@@ -17,36 +19,18 @@ color: #051367;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.polygon {
-    position: absolute;
-width: 53px;
-height: 41px;
-
-background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.circle {
-    position: absolute;
-width: 53px;
-height: 41px;
-
-background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .TitleBox{
     position: fixed;
     top: 150px;
-    left: 350px;
+    left: 500px;
 width: 280px;
 height: 80px;
 }
 
 .RewardBox{
     position: fixed;
-    top: 150px;
-    left: 550px;
+    top: 250px;
+    left: 1000px;
     width: 192px;
     height: 150px;
     
@@ -56,9 +40,11 @@ height: 80px;
 }
 
 .RewardTitle {
-    position: absolute;
-width: 133px;
-height: 36px;
+    position: fixed;
+    left: 1050px;
+    top: 250px;
+    width: 133px;
+    height: 36px;
 
 font-family: 'Roboto';
 font-style: normal;
@@ -75,7 +61,9 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .RewardPoints {
-    position: absolute;
+    position: fixed;
+    left: 1050px;
+    top: 280px;
 width: 88px;
 height: 30px;
 
@@ -102,4 +90,68 @@ background: #FFD700;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+
+.ButtonRedeem {
+    position: fixed;
+    top: 350px;
+    left: 1050px;
+    border:none;
+    width: 100px;
+    height: 30px;
+    background-color: #FFF;
+}
+
+.textName {
+    position: fixed;
+    top: 150px;
+    left: 650px;
+    width: 650px;
+    height: 71px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    
+    color: #051367;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cvvButton {
+    position: fixed;
+    top: 250px;
+    left: 650px;
+    border:none;
+    width: 100px;
+    height: 30px;
+    background-color: #051367;
+    color: #fff;
+}
+
+
+.freezeButton {
+    position: fixed;
+    top: 350px;
+    left: 650px;
+    border:none;
+    width: 100px;
+    height: 30px;
+    background-color: #051367;
+    color: #fff;
+}
+
+.setpinButton {
+    position: fixed;
+    top: 450px;
+    left: 650px;
+    border:none;
+    width: 100px;
+    height: 30px;
+    background-color: #051367;
+    color: #fff;
+}
 
