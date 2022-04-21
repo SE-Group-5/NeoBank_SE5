@@ -7,8 +7,8 @@ class Landing extends Component {
     return (
       <div className="container mx-auto">
           <Jumbotron className="mt-5">
-              <h1 className="display-3">Hello from MERN Banking</h1>
-              <p className="lead">This is a simple Banking app that allows you to track your account activity, make transactions, send messages and check currency exchange rates. All data is stored in database, currency exchange rates provided via external API.</p>
+              <h1 className="display-3">Hello from NeoBank</h1>
+              <p className="lead">Welcome to the one stop solution for all banking needs.</p>
               <hr className="my-2" />
               <p>Please click below to login</p>
               <p className="lead">

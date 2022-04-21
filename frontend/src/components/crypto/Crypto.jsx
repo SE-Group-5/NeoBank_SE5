@@ -34,60 +34,66 @@ const Crypto = () => {
 	return (
 		<div className="container crypto-container">
 			<h1 className={`${styles.head}`}>Crypto</h1>
-			
-			{/* <div className={`card ${styles["data-group"]}`} style="background: #5D8BF4;"> */}
-			<div className={`card ${styles["data-group"]}`}>
-				<div className={`card-body ${styles["data-group"]}`}>
 
-					<div>
-						<h5 className={`card-title ${styles.hv}`}>Holding value</h5>
-						<h6 className={`${styles.hvMoney}`}>{new Intl.NumberFormat('en-IN', {style: 'currency', currency: 'INR'}).format(holdingValue)}</h6>
-					</div>
+			<div className={`${styles.box}`}>
+				<div className={`card ${styles["data-group"]}`}>
+					<div className={`card-body ${styles["data-group"]}`}>
 
-					<div className="container-fluid">
-						<div className="row">
-							{/* <div className="col-md-2"> */}
-							<div>
-								Invested value
-								<br />
-								{new Intl.NumberFormat('en-IN', {style: 'currency', currency: 'INR'}).format(investedValue)}
-							</div>
-							{/* <div className="col-md-2"> */}
-							<div>
-								Available INR
-								<br />
-								{new Intl.NumberFormat('en-IN', {style: 'currency', currency: 'INR'}).format(availableINR)}
+						<div>
+							<h5 className={`card-title ${styles.hv}`}>Holding value</h5>
+							<h6 className={`${styles.hvMoney}`}>{new Intl.NumberFormat('en-IN', {style: 'currency', currency: 'INR'}).format(holdingValue)}</h6>
+						</div>
+
+						<div className="container-fluid">
+							<div className="row">
+								{/* <div className="col-md-2"> */}
+								<div>
+									Invested value
+									<br />
+									{new Intl.NumberFormat('en-IN', {style: 'currency', currency: 'INR'}).format(investedValue)}
+								</div>
+								{/* <div className="col-md-2"> */}
+								<div>
+									Available INR
+									<br />
+									{new Intl.NumberFormat('en-IN', {style: 'currency', currency: 'INR'}).format(availableINR)}
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<br />
-			
-			<div>
-				<input id="w" type="text" placeholder="Enter amount.." />
-				<button className={`btn btn-primary ${styles.btn}`} onClick={handleWithdraw}>
-					Withdraw INR
-				</button>
 
 				<br />
+				
+				<div>
+					<input id="w" type="text" placeholder="Enter amount.." />
+					<button className={`btn btn-primary ${styles.btn}`} onClick={handleWithdraw}>
+						Withdraw INR
+					</button>
 
-				<input id="d" type="text" placeholder="Enter amount.." />
-				<button className={`btn btn-primary ${styles.btn}`} onClick={handleDeposit}>
-					Deposit INR
-				</button>
+					<br />
 
-				<br />
+					<input id="d" type="text" placeholder="Enter amount.." />
+					<button className={`btn btn-primary ${styles.btn}`} onClick={handleDeposit}>
+						Deposit INR
+					</button>
 
-				<input id="i" type="text" placeholder="Enter amount.." />
-				<button className={`btn btn-primary ${styles.btn}`} onClick={handleInvest}>
-					Invest INR
-				</button>
+					<br />
+
+					<input id="i" type="text" placeholder="Enter amount.." />
+					<button className={`btn btn-primary ${styles.btn}`} onClick={handleInvest}>
+						Invest INR
+					</button>
+				</div>
 			</div>
 
-			<div className="myCoins">
-				{/* display Coins component */}
+			<div className={`${styles.box}`}>
+				<div>
+					<img src="./images/yourCoins.png" alt="Coins"></img>
+				</div>
+				<div className={`${styles.move}`}>
+					<img src="./images/trendingCoins.png" alt="Coins"></img>
+				</div>
 			</div>
 		</div>
 	);
