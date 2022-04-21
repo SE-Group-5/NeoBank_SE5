@@ -27,3 +27,17 @@
 	color: #FFFFFF;
 	font-size: 20px;
 }
+
+.head {
+	color: #5D8BF4;
+}
+
+/* .okay {
+	background: #DFF6FF;
+	font-size: 18px;
+	border: none;
+} */
+
+.btn {
+	margin-top: 10px;
+}

@@ -27,6 +27,8 @@ import { setCurrentUser, logoutUser } from "../actions/authActions";
 import "./App.css";
 import PageNotFound from "../components/PageNotFound/PageNotFound";
 
+import Crypto from "./../components/crypto/Crypto";
+
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -56,10 +58,12 @@ class App extends Component {
           <Route exact path="/" component={Landing} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
+					{/* <Route path="/crypto" component={Crypto} /> */}
           <PrivateRoute component={Navigation} />
           <Layout>
             <PrivateRoute component={Sidebar} />
             <Switch>
+							<PrivateRoute path="/crypto" component={Crypto} />
               <PrivateRoute path="/dashboard" component={Dashboard} />
               <PrivateRoute path="/account" component={Account} />
               <PrivateRoute path="/transactions" component={Transactions} />

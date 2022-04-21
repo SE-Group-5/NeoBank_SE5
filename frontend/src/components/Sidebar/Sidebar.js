@@ -27,10 +27,25 @@ export default class Sidebar extends Component {
                       Transactions
                     </NavLink>
                   </ListGroupItem>
-                  <ListGroupItem className="nav-item">
+                  {/* <ListGroupItem
+									 className="nav-item">
                     <NavLink className="nav-link" to="/converter">
                     <i className="fas fa-money-bill-alt mr-2"></i>
                       Converter
+                    </NavLink>
+                  </ListGroupItem> */}
+									<ListGroupItem
+									 className="nav-item">
+                    <NavLink className="nav-link" to="/crypto">
+                    <i className="fas fa-coins mr-2"></i>
+                      Crypto
+                    </NavLink>
+                  </ListGroupItem>
+									<ListGroupItem
+									 className="nav-item">
+                    <NavLink className="nav-link" to="/card">
+                    <i className="fas fa-credit-card mr-2"></i>
+                      Card
                     </NavLink>
                   </ListGroupItem>
                   <ListGroupItem className="nav-item">
@@ -74,6 +89,4 @@ const SidebarWrapper = styled.div`
       color: #000!important;
     }
   }
-}
-}
-`;
+}`;
